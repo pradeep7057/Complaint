@@ -1,0 +1,18 @@
+
+<table border="3" align="center">
+    <tr>
+        <th>Admin ID</th>
+        <th>Admin Name</th>
+        <th>Email</th>
+        <th>Password</th>
+    </tr>
+    <tr >
+        <td>{{admin.admn_ID}} </td>
+        <td>{{admin.admnName}} </td>
+        <td>{{admin.email}} </td>
+        <td>{{admin.password}} </td>
+    </tr>
+</table>
+<button  aria-colindex="SHOW TICKETS">
+    <a [routerLink]="['/admindashboard',{outlets: {'mphasis': ['showtickets']}}]"> SHOW TICKETS</a> </button>
+    <router-outlet name="mphasis"></router-outlet>

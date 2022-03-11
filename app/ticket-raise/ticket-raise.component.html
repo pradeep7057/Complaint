@@ -1,0 +1,8 @@
+<form #addtickets="ngForm" (ngSubmit)="insert(addtickets)">
+    Manager Name:
+    <select [(NgModel)]="mgr_Id" name="mgr_Id" (change)="showm()">
+        <option *ngFor="let m for mgr" value="{{m.mgr_Id}}">
+            {{m.mgrname}}
+        </option>
+    </select>
+</form>

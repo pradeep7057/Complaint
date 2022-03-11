@@ -1,0 +1,18 @@
+<p>mgr-dashboard works!</p>
+<table border="3" align="center">
+    <tr>
+        <th>Manager ID</th>
+        <th>Manager Name</th>
+        <th>Pincode</th>
+        <th>Contact Number</th>
+    </tr>
+    <tr>
+        <td>{{mgr.mgr_ID}} </td>
+        <td>{{mgr.mgrname}} </td>
+        <td>{{mgr.pincode}} </td>
+        <td>{{mgr.mobileno}} </td>
+    </tr>
+</table>
+<button  aria-colindex="SHOW TICKETS">
+    <a [routerLink]="['/mgrdashBoard',{outlets: {'mphasis': ['showtickets']}}]"> SHOW TICKETS</a> </button>
+    <router-outlet name="mphasis"></router-outlet>

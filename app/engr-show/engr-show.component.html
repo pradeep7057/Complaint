@@ -1,0 +1,14 @@
+<table border="3" align="center">
+    <tr>
+        <th>Engineer ID</th>
+        <th>Engineer Name</th>
+        <th>Pincode</th>
+        <th>Contact Number</th>
+    </tr>
+    <tr *ngFor="let e of engr">
+        <td>{{e.engr_ID}} </td>
+        <td>{{e.engrname}} </td>
+        <td>{{e.pincode}} </td>
+        <td>{{e.mobileno}} </td>
+    </tr>
+</table>

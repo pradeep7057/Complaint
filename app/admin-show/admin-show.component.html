@@ -1,0 +1,15 @@
+<p>admin-show works!</p>
+<table border="3" align="center">
+    <tr>
+        <th>Admin ID</th>
+        <th>Admin Name</th>
+        <th>Email</th>
+        <th>Password</th>
+    </tr>
+    <tr *ngFor="let a of admin">
+        <td>{{a.admn_ID}} </td>
+        <td>{{a.admnName}} </td>
+        <td>{{a.email}} </td>
+        <td>{{a.password}} </td>
+    </tr>
+</table>

@@ -1,0 +1,19 @@
+<div id="img" >
+    <h1>Enter Your Details</h1>
+<div class="login">
+    
+<form (ngSubmit)="logMe()" >
+    Engineer Name : 
+    <select [(ngModel)]="engId" name="engId" class="dropd">
+        <option *ngFor="let e of engr" value={{e.engr_ID}}>
+            {{e.engrname}}
+        </option>
+    </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/><br/> 
+    Password : 
+    <input type="password" name="passCode" [(ngModel)]="passCode" class="dropd" /> 
+
+    <br/><br/>
+    
+    <input type="submit" value="Sign In" class="button">
+  </form>
+</div>

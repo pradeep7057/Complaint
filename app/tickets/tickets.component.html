@@ -1,0 +1,20 @@
+<table border="3" align="center">
+    <tr>
+        <th>Ticket No</th>
+        <th>Customer ID</th>
+        <th>Manager ID</th>
+        <th>Engineer ID</th>
+        <th>Pincode</th>
+        <th>Compalaint</th>
+        <th>Status</th>
+    </tr>
+    <tr *ngFor="let t of tickets">
+        <td>{{t.t_NO}} </td>
+        <td>{{t.cust_ID}} </td>
+        <td>{{t.mgr_ID}} </td>
+        <td>{{t.engr_ID}} </td>
+        <td>{{t.pincode}} </td>
+        <td>{{t.complaint}} </td>
+        <td>{{t.status}} </td>
+    </tr>
+</table>
